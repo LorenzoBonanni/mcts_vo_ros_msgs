@@ -1,2 +1,2 @@
-float64[] positions
+ObstaclePos[] positions
 float64[] radius
