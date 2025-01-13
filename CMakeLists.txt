@@ -23,8 +23,14 @@ find_package(rosidl_default_generators REQUIRED)
 # find_package(<dependency> REQUIRED)
 
 # Specify the custom message files
+set(msg_files
+  msg/Obstacles.msg
+  msg/RobotState.msg
+)
+
+
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/Status.msg"
+  ${msg_files}
 )
 
 if(BUILD_TESTING)
