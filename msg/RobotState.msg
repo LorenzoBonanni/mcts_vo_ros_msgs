@@ -1,1 +1,2 @@
-float64[] state
+float64[] position
+float64 heading
